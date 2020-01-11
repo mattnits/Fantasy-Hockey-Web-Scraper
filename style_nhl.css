@@ -1,0 +1,100 @@
+body {
+    background-image: url('/static/images/hockey.jpg');
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+}
+
+#header {
+    background-color: rgb(184, 8, 238);
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 70px;
+    position: relative;
+    width: 1600px;
+    left: 150px;
+    right: 150px;
+}
+
+h1 {
+    position: relative;
+    top: -15px;
+    font-size: 40px;
+    left: 10px;
+}
+
+table, th, tr, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+
+table {
+    position: relative;
+    left: 150px;
+}
+
+tr:nth-child(even) {
+    background-color: #b8b8b8;
+}
+tr:nth-child(odd) {
+    background-color: #999999;
+}
+
+.headers{
+    cursor: pointer;
+}
+
+.data{
+    cursor: default;
+}
+
+th {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+ul#pages li {
+    display: inline;
+    list-style-type: none;
+}
+
+ul#tables li {
+    position: relative;
+    left: 200px;
+    display: inline;
+    list-style-type: none;
+    background-color: #646464;
+    margin-left: 20px;
+    border-width: 2px;
+    border-style: solid;
+    font-size: large;
+    padding: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#pages li {
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    right: 1px;
+    bottom: 20px;
+    font-size: 25px;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+#pages li:hover {
+    background-color: grey;
+    background-size: 40px;
+}

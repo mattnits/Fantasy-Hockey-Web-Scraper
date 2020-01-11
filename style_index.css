@@ -1,0 +1,104 @@
+body {
+    background-image: url('/static/images/hockey.jpg');
+    background-size: cover;
+}
+
+#header {
+    background-color: rgb(184, 8, 238);
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 70px;
+    position: relative;
+    width: 1600px;
+    left: 150px;
+    right: 150px;
+}
+
+h1 {
+    position: relative;
+    top: -15px;
+    font-size: 40px;
+    left: 10px;
+}
+
+#header2 {
+    background-color: #999999;
+    position: relative;
+    width: 1000px;
+    left: 150px;
+}
+
+#text1 {
+    background-color: #999999;
+    position: relative;
+    width: 1000px;
+    left: 150px;
+}
+
+ul li {
+    display: inline;
+    list-style-type: none;
+}
+
+table, th, tr, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #b8b8b8;
+}
+tr:nth-child(odd) {
+    background-color: #999999;
+}
+
+tr, td {
+    padding: 3px;
+}
+
+th {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: black;
+    color: #a7a7a7;
+}
+
+#player_leader {
+    position: relative;
+    left: 1303px;
+    top: -100px;
+    width: 450px;
+}
+
+#goalie_leader {
+    position: relative;
+    left: 1303px;
+    width: 450px;
+    top: -75px;
+}
+
+li {
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    right: 1px;
+    bottom: 20px;
+    font-size: 25px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: grey;
+    background-size: 40px;
+}

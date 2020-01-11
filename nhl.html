@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "{% static 'js/table_stuff.js' %}"> </script>
+        <link rel = "stylesheet" type = "text/css" href = "{% static 'css/style_nhl.css' %}">
+        <title>Fantasy Hockey Helper All Players</title>
+        <body>
+            <div id = "header"> 
+                <h1 id = "title">Fantasy Hockey Helper</h1>
+                <ul id = "pages">
+                    <li><a href = "{% url 'index' %}">Home</a></li>
+                    <li><a href = "{% url 'fantasy' %}">Fantasy</a></li>
+                    <li>Log In</li>
+                </ul>
+            </div>
+            <ul id = "tables">
+                <li id = "test" >Players</li>
+                <li>Goalies</li>
+                <li>All</li>
+            </ul>
+            <div id = "full_table">
+                <table class = "nhl_table">
+                    <tr class = "headers">
+                        <th>RANK</th>
+                        <th>NAME</th>
+                        <th>TEAM</th>
+                        <th>POS</th>
+                        <th>FPTS</th>
+                        <th>AFPT</th>
+                        <th>GP</th>
+                        <th>G</th>
+                        <th>A</th>
+                        <th>PTS</th>
+                        <th>+/-</th>
+                        <th>PIM</th>
+                        <th>PPP</th>
+                        <th>SHP</th>
+                        <th>GWG</th>
+                        <th>SOG</th>
+                        <th>HIT</th>
+                        <th>BLK</th>
+                    </tr>
+                    {% for j in list %}
+                            <tr class = "data">
+                                {% for i in j %}
+                                    {% if forloop.counter == 1 %}
+                                    <td>{{forloop.parentloop.counter}}</td>
+                                    <td>{{i}}</td>
+                                    {% endif %}
+                                    {% if forloop.counter == 2 %}
+                                    <td>{NULL}</td>
+                                    <td>{{i}}</td>
+                                    {% endif %}
+                                    {% if forloop.counter == 3 %}
+                                    <td>{{i}}</td>
+                                    {% endif %}
+                                    {% if forloop.counter == 4 %}
+                                    <td>{{i}}</td>
+                                    {% endif %}
+                                    {% if forloop.counter == 5 %}
+                                    <td>{{i}}</td>
+                                    {% endif %}
+                                    {% if forloop.counter == 6 %}
+                                    <td>{{i}}</td>
+                                    {% endif %}
+                                    {% if forloop.counter == 7 %}
+                                    <td>{{i}}</td>
+                                    {% endif %}
+                                    {% if forloop.counter == 8 %}
+                                    <td>{{i}}</td>
+                                    {% endif %}
+                                    {% if forloop.counter == 9 %}
+                                    <td>{{i}}</td>
+                                    {% endif %}
+                                    {% if forloop.counter == 10 %}
+                                    <td>{{i}}</td>
+                                    {% endif %}
+                                    {% if forloop.counter == 11 %}
+                                    <td>{{i}}</td>
+                                    {% endif %}
+                                    {% if forloop.counter == 12 %}
+                                    <td>{{i}}</td>
+                                    {% endif %}
+                                    {% if forloop.counter == 13 %}
+                                    <td>{{i}}</td>
+                                    {% endif %}
+                                    {% if forloop.counter == 14 %}
+                                    <td>{{i}}</td>
+                                    {% endif %}
+                                    {% if forloop.counter == 15 %}
+                                    <td>{{i}}</td>
+                                    {% endif %}
+                                    {% if forloop.counter == 16 %}
+                                    <td>{{i}}</td>
+                                    {% endif %}
+                                {% endfor %}
+                            </tr>
+                        
+                    {% endfor %}
+                </table>
+            </div>
+        </body>
+    </head>
+</html>
